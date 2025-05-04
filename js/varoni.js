@@ -111,7 +111,7 @@ Vai viņi dikti vainīgi, ka Krievijā piedzimuši un apmaldījušies trijās ko
         Vai viņi dikti vainīgi, ka Krievijā piedzimuši un apmaldījušies trijās komunisma priedēs? Un vēl ko teikšu. Mēs nezinām, bet nekur nav teikts, ka tava māte un patēvs butu pagalam. Ir tālu prom, bet, iespējams, dzīvi. (237.lpp.)</em>
 
         ` },
-    { src: "images/karsiens.jpg", description: `
+    { src: "images/karsiens.JPG", description: `
         <h3>Pēteris Kārsiens</h3><br>
         <ul>
         <li>Strādā vācu palīgpolicijā.
