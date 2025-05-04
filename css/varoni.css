@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#dfdcd8 !important;
+	background-image: url(https://uploads-ssl.webflow.com/6074e88…/6074e88…_BG%20light.svg) !important;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    min-height: 100vh; /* Ensure the body takes the full height of the viewport */
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.specifications-container {
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-top: 150px; /* Add space from the top */
+    padding-top: 10px; /* Optional: Add internal spacing */
+    flex: 1; /* Allow the main content to take up available space */
+}
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    margin: 0 auto; /* Center the slider horizontally */
+    padding: 0 20px; /* Add padding for even spacing */
+}
+
+.image-slider img {
+    
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.arrow.prev {
+    left: 10px;
+}
+
+.arrow.next {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.description-container {
+    padding: 20px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+.navbar {
+    opacity: 1!important;
+    ;
+}
+
+footer {
+    width: 100%; /* Ensure the footer spans the full width */
+    background-color: #f8f8f8; /* Optional: Set a background color */
+    padding: 20px; /* Optional: Add padding */
+    text-align: center; /* Optional: Center-align text */
+    margin-top: auto; /* Push the footer to the bottom */
+}

@@ -1,0 +1,257 @@
+{
+    "v": "5.7.0",
+    "fr": 30,
+    "ip": 0,
+    "op": 30,
+    "w": 300,
+    "h": 300,
+    "nm": "white-circle2px",
+    "ddd": 0,
+    "assets": [
+      {
+        "id": "image_0",
+        "w": 300,
+        "h": 300,
+        "u": "",
+        "p": "data:image/png;base64,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",
+        "e": 1
+      }
+    ],
+    "layers": [
+      {
+        "ddd": 0,
+        "ind": 1,
+        "ty": 2,
+        "nm": "white-circle2px.png",
+        "cl": "png",
+        "refId": "image_0",
+        "sr": 1,
+        "ks": {
+          "o": {
+            "a": 0,
+            "k": 100,
+            "ix": 11
+          },
+          "r": {
+            "a": 0,
+            "k": 0,
+            "ix": 10
+          },
+          "p": {
+            "a": 0,
+            "k": [150, 150, 0],
+            "ix": 2
+          },
+          "a": {
+            "a": 0,
+            "k": [150, 150, 0],
+            "ix": 1
+          },
+          "s": {
+            "a": 0,
+            "k": [100, 100, 100],
+            "ix": 6
+          }
+        },
+        "ao": 0,
+        "hasMask": true,
+        "masksProperties": [
+          {
+            "inv": false,
+            "mode": "n",
+            "pt": {
+              "a": 0,
+              "k": {
+                "i": [
+                  [0, 0],
+                  [6, -159],
+                  [-18.729, 191.027],
+                  [128, -9]
+                ],
+                "o": [
+                  [0, 0],
+                  [-6, 159],
+                  [5, -51],
+                  [-128, 9]
+                ],
+                "v": [
+                  [152, 5],
+                  [4, 161],
+                  [298, 163],
+                  [132, 1]
+                ],
+                "c": false
+              },
+              "ix": 1
+            },
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 3
+            },
+            "x": {
+              "a": 0,
+              "k": 0,
+              "ix": 4
+            },
+            "nm": "Mask 1"
+          }
+        ],
+        "ef": [
+          {
+            "ty": 22,
+            "nm": "Stroke",
+            "np": 13,
+            "mn": "ADBE Stroke",
+            "ix": 1,
+            "en": 1,
+            "ef": [
+              {
+                "ty": 10,
+                "nm": "Path",
+                "mn": "ADBE Stroke-0001",
+                "ix": 1,
+                "v": {
+                  "a": 0,
+                  "k": 1,
+                  "ix": 1
+                }
+              },
+              {
+                "ty": 7,
+                "nm": "All Masks",
+                "mn": "ADBE Stroke-0010",
+                "ix": 2,
+                "v": {
+                  "a": 0,
+                  "k": 0,
+                  "ix": 2
+                }
+              },
+              {
+                "ty": 7,
+                "nm": "Stroke Sequentially",
+                "mn": "ADBE Stroke-0011",
+                "ix": 3,
+                "v": {
+                  "a": 0,
+                  "k": 1,
+                  "ix": 3
+                }
+              },
+              {
+                "ty": 2,
+                "nm": "Color",
+                "mn": "ADBE Stroke-0002",
+                "ix": 4,
+                "v": {
+                  "a": 0,
+                  "k": [1, 1, 1, 1],
+                  "ix": 4
+                }
+              },
+              {
+                "ty": 0,
+                "nm": "Brush Size",
+                "mn": "ADBE Stroke-0003",
+                "ix": 5,
+                "v": {
+                  "a": 0,
+                  "k": 8,
+                  "ix": 5
+                }
+              },
+              {
+                "ty": 0,
+                "nm": "Brush Hardness",
+                "mn": "ADBE Stroke-0004",
+                "ix": 6,
+                "v": {
+                  "a": 0,
+                  "k": 0.75,
+                  "ix": 6
+                }
+              },
+              {
+                "ty": 0,
+                "nm": "Opacity",
+                "mn": "ADBE Stroke-0005",
+                "ix": 7,
+                "v": {
+                  "a": 0,
+                  "k": 1,
+                  "ix": 7
+                }
+              },
+              {
+                "ty": 0,
+                "nm": "Start",
+                "mn": "ADBE Stroke-0008",
+                "ix": 8,
+                "v": {
+                  "a": 0,
+                  "k": 0,
+                  "ix": 8
+                }
+              },
+              {
+                "ty": 0,
+                "nm": "End",
+                "mn": "ADBE Stroke-0009",
+                "ix": 9,
+                "v": {
+                  "a": 1,
+                  "k": [
+                    {
+                      "i": {
+                        "x": [0],
+                        "y": [0.996]
+                      },
+                      "o": {
+                        "x": [0.593],
+                        "y": [-0.009]
+                      },
+                      "t": 0,
+                      "s": [0]
+                    },
+                    {
+                      "t": 29,
+                      "s": [100]
+                    }
+                  ],
+                  "ix": 9
+                }
+              },
+              {
+                "ty": 7,
+                "nm": "Spacing",
+                "mn": "ADBE Stroke-0006",
+                "ix": 10,
+                "v": {
+                  "a": 0,
+                  "k": 15,
+                  "ix": 10
+                }
+              },
+              {
+                "ty": 7,
+                "nm": "Paint Style",
+                "mn": "ADBE Stroke-0007",
+                "ix": 11,
+                "v": {
+                  "a": 0,
+                  "k": 3,
+                  "ix": 11
+                }
+              }
+            ]
+          }
+        ],
+        "ip": 0,
+        "op": 30,
+        "st": 0,
+        "bm": 0
+      }
+    ],
+    "markers": []
+  }

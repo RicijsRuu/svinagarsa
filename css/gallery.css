@@ -1,0 +1,296 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+	font-family: Lato, sans-serif;
+	margin: 0;
+	padding: 1rem;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color:#dfdcd8 !important;
+	background-image: url(https://uploads-ssl.webflow.com/6074e88…/6074e88…_BG%20light.svg) !important;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0;
+}
+
+img {
+	box-sizing: border-box;
+	display: block;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	transition: transform 1000ms;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	max-width: 100%;
+	width: 70rem;
+}
+
+figure {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+figure::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200%;
+	height: 200%;
+	background: rgba(0, 0, 0, 0.5);
+	transform-origin: center;
+	opacity: 0;
+	transform: scale(2);
+	transition: opacity 300ms;
+}
+
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	text-align: center;
+	padding: 1rem;
+	color: white;
+	font-size: 1.2rem;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 600ms, transform 600ms;
+}
+
+a:is(:hover, :focus) figure::after {
+	opacity: 1;
+}
+
+a:is(:hover, :focus) figcaption {
+	opacity: 1;
+	transition: opacity 600ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	figcaption {
+		transform: translate3d(0, 2rem, 0);
+	}
+	
+	figure::after {
+		border-radius: 50%;
+		opacity: 1;
+		transform: scale(0);
+		transition: transform 900ms;
+	}
+	
+	a:is(:hover, :focus) figure::after {
+		transform: scale(2.5);
+	}
+
+	a:is(:hover, :focus) figcaption {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+		transition: opacity 600ms 400ms, transform 600ms 400ms;
+	}
+
+	a:is(:hover, :focus) img {
+		transform: scale(1.2);
+	}
+}
+.lightbox {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.lightbox-content {
+    max-width: 90%; /* Ensure the image scales proportionally */
+    max-height: 90%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    position: relative; /* Allow positioning adjustments */
+    left: 150px; /* Push the image slightly to the right */
+    transform: translateX(0); /* Ensure no additional horizontal offset */
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 90%; /* Reduce the modal width slightly */
+    max-width: 90%; /* Ensure it doesn't exceed 90% of the screen width */
+    height: 90%; /* Reduce the modal height slightly */
+    max-height: 90%; /* Ensure it doesn't exceed 90% of the screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents any overflow */
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image scales proportionally */
+    display: block;
+}
+
+img {
+    margin-bottom: -4px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Center the arrows vertically */
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px; /* Increase font size for better visibility */
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 1001; /* Ensure arrows appear above other elements */
+}
+
+.next {
+    right: 10px; /* Position the next arrow on the right */
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 10px; /* Position the previous arrow on the left */
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Add a hover effect */
+}
+
+.close_button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001 !important; /* Ensure it appears above other elements */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+    padding: 10px; /* Add padding for better clickability */
+    border-radius: 50%; /* Make it circular */
+}
+
+.close_button:hover,
+.close_button:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar.light.w-nav {
+opacity: 1 !important;
+}
+
+.lightbox-text {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 30%; /* Limit the width of the text container */
+    line-height: 1.5;
+    padding: 10px 20px; /* Add padding for spacing */
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: Add a semi-transparent background for better readability */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    overflow-wrap: break-word; /* Break long words if necessary */
+    margin-left: auto; /* Center the text container */
+    margin-right: auto; /* Center the text container */
+}
+
+footer {
+    position: relative; /* Ensure it stays in the normal document flow */
+    width: 100vw; /* Make it span the full width of the viewport */
+    clear: both; /* Clear any floating elements above */
+    margin-top: 2rem; /* Add some spacing above the footer */
+    background-color: #f0f0f0; /* Optional: Add a background color for visibility */
+    padding-top: 2rem 0; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+.footer-container {
+    max-width: 1200px; /* Optional: Limit the content width */
+    margin: 0 auto; /* Center the content horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section {
+    flex: 1; /* Allow the main content to grow and push the footer down */
+}
+
+
