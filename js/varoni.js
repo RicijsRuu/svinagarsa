@@ -4,23 +4,23 @@ const images = [
         description: `
         <h3>Matīss Birkens</h3><br>
         <strong>Portrets:</strong><br>
-        Nekāds bilžu bāleliņš neesmu — mati brūngani melni, viļņaini, deguns ar kumpi, zēnības gados pret bēniņu siju pārlauzts. Miesa spalvaina kā <em>dienvidniekam</em>, vienīgi <em>acis</em> zilganzaļas — vismaz tās <em>daudzmaz</em> latviskas. (24. Lpp)<br><br>
+        <em>Nekāds bilžu bāleliņš neesmu — mati brūngani melni, viļņaini, deguns ar kumpi, zēnības gados pret bēniņu siju pārlauzts. Miesa spalvaina kā <em>dienvidniekam</em>, vienīgi <em>acis</em> zilganzaļas — vismaz tās <em>daudzmaz</em> latviskas. (24. Lpp)</em><br><br>
         <ul>
             <li><strong>Dzīvo Torņkalnā</strong>, savrupmājā, kas atrodas <em>starp</em> Irbenes ielu un pansionātu Ģimnastikas ielā.<br>
-            Nelielais, bet itin glītais savrupnamiņš atrodas <em>starp</em> Irbenes ielu un pansionātu Ģimnastikas ielā. (20.lpp.)</li>
+            <em>Nelielais, bet itin glītais savrupnamiņš atrodas <em>starp</em> Irbenes ielu un pansionātu Ģimnastikas ielā. (20.lpp.)</em></li>
             <li><strong>Dzimis 1915. gada decembrī</strong>, grāmatas sākumā vēl ir 23 gadi, bet lielāko daļu romāna sižeta Matīsam ir 24 gadi.<br>
             <em>Man decembrī būs divdesmit četri.</em> (9.lpp.)</li>
             <li>Palicis bez biologiskā tēva, kuru zaudēja frontē Pirmā Pasaules kara laikā. Māti sauc Marija, un patēvu — Volfgangs jeb Volfs, kurš ir baltvācietis.</li>
             <li>Matīss ir uzticams draugs, jo, kad Koļa palūdza viņam apraudzīt Alvīnes tanti, Matīss neizstāstīja to, ka Nikolajs nogalināja viņas dēlu.<br>
-            — Pinkertons, ko neteiksi, — Kola runā, uz mani neskatīdamies. — Domāju, vieglāk būs, ja nezināsi... Viņai, ceru, tu neko neteici?<br>
-            — Protams, nē! Varbūt gudrs neesmu, bet tik stulbs arī ne. Viņa lika tev sirsnīgi dzert tējas. - Pašķielēju uz Koļu un pamanu viņu berzējam aci, it kā tajā kaut kas būtu iekritis. — Neuztraucies, es nevienam neko nestāstīšu, tomēr vai nav labāk, ka es zinu? (63.lpp.)</li>
+            <em>— Pinkertons, ko neteiksi, — Koļa runā, uz mani neskatīdamies. — Domāju, vieglāk būs, ja nezināsi... Viņai, ceru, tu neko neteici?<br>
+            — Protams, nē! Varbūt gudrs neesmu, bet tik stulbs arī ne. Viņa lika tev sirsnīgi dzert tējas. - Pašķielēju uz Koļu un pamanu viņu berzējam aci, it kā tajā kaut kas būtu iekritis. — Neuztraucies, es nevienam neko nestāstīšu, tomēr vai nav labāk, ka es zinu? (63.lpp.)</em></li>
             <li>Matīss uztver dzīvību kā vērtību, turpretim pret nāvi viņam ir riebums. Būdams divpadsmit gadus vecs, viņš spiests palīdzēt tēvoča kaimiņam nokaut teļu, to pieturot un uzguļoties tam virsū ar savu svaru. Tam jābūt spēcīgam iespaidam, turēt dzīvu būtni, kamēr kaimiņš tai pārgriež rīkli. Matīss atceras:<br>
-            „Asiņainām drēbēm, trīcošiem ceļiem un īdēdams gluži kā pirmīt teliņš, steberēju uz tēvoča mājām. “Pagaidi, neskrien, es tev par izlīdzēšanu svaigu cāli iedošu. Rīta agrumā nokāvu…” Es pieliku soli un metos prom.” (55.lpp.)</li>
+            <em>„Asiņainām drēbēm, trīcošiem ceļiem un īdēdams gluži kā pirmīt teliņš, steberēju uz tēvoča mājām. “Pagaidi, neskrien, es tev par izlīdzēšanu svaigu cāli iedošu. Rīta agrumā nokāvu…” Es pieliku soli un metos prom.” (55.lpp.)</em></li>
         </ul>
         <strong>Citāts par mammu, volfu, grāmata uz geto</strong><br>
         <ul>
             <li>Strādāja par krāsotāju pie Koļa un arī par kapraci.</li>
-            <li>Matīss pēc tam, kad lode ir cauršāvusi viņa vaigu, viņš jūt svina garšu mutē ik reizi, kad tuvumā notiek kaut kas vardarbīgs.<br>
+            <li>Matīss pēc tam, kad lode ir cauršāvusi viņa vaigu, jūt svina garšu mutē ik reizi, kad tuvumā notiek kaut kas vardarbīgs.<br>
                 <ul>
                     <li>Garām paiet kāds zaldāts</li>
                     <li>Apkārtnē notiek karadarbība</li>
@@ -29,7 +29,7 @@ const images = [
                 </ul>
             </li>
         </ul>
-        Svina garša mutē vairs nav tik uzbāzīga kā iepriekš. Esmu jau tā pieradis, ka ilgākus laika prīžus spēju par to aizmirst. Taču, ja sakustinu mēli, žokļus un izgaršoju siekalas, tad secinu, ka metāliskā atēna turpat vien dus. (206.lpp.)
+        <em>Svina garša mutē vairs nav tik uzbāzīga kā iepriekš. Esmu jau tā pieradis, ka ilgākus laika prīžus spēju par to aizmirst. Taču, ja sakustinu mēli, žokļus un izgaršoju siekalas, tad secinu, ka metāliskā atēna turpat vien dus. (206.lpp.)</em>
         `
     },
     { src: "images/nikolajs.jpeg", description:
